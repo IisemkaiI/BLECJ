@@ -23,7 +23,6 @@ RANKS = [
 ROOT = Path(__file__).resolve().parent
 DB_PATH = ROOT / "blackjack.db"
 
-
 def connect_db():
     db = sqlite3.connect(DB_PATH)
     db.row_factory = sqlite3.Row
